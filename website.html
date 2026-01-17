@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avyra | IT Solutions</title>
+
+  <!-- Tailwind CDN -->
+  <script src="./script.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0a84ff'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-neutral-50 text-neutral-900 antialiased">
+
+<!-- Header -->
+<header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-neutral-200">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-lg font-semibold tracking-tight">AVYRA</h1>
+
+    <nav class="hidden md:flex gap-8 text-sm font-medium text-neutral-600">
+      <a href="#about" class="hover:text-neutral-900">About</a>
+      <a href="#services" class="hover:text-neutral-900">Services</a>
+      <a href="#solutions" class="hover:text-neutral-900">Solutions</a>
+      <a href="#projects" class="hover:text-neutral-900">Projects</a>
+      <a href="#contact" class="hover:text-neutral-900">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO BANNER (Unsplash Image 1600×900) -->
+<section class="relative">
+  <img 
+    src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1600&h=900&fit=crop"
+    class="w-full h-[600px] object-cover"
+  />
+
+  <div class="absolute inset-0 bg-black/60 flex items-center justify-center">
+    <div class="text-center text-white max-w-3xl px-6">
+      <h2 class="text-4xl md:text-6xl font-semibold mb-6">
+        Building Digital Solutions for the Future
+      </h2>
+      <p class="text-lg mb-8">
+        We design, develop, and scale high-performance software solutions for startups and enterprises.
+      </p>
+      <a href="#contact"
+         class="bg-primary text-white px-8 py-3 rounded-full text-sm font-medium">
+        Get in Touch
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h3 class="text-3xl font-semibold mb-6">About Avyra</h3>
+      <p class="text-neutral-600 leading-relaxed">
+        Avyra is a technology-driven IT solutions company specializing in web applications,
+        cloud solutions, API development, cybersecurity, and digital transformation.
+        We help businesses modernize their systems and scale efficiently.
+      </p>
+    </div>
+
+    <img 
+      src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop"
+      class="rounded-2xl shadow-lg"
+    />
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-20 bg-neutral-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-semibold text-center mb-12">Our Services</h3>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-2xl shadow">
+        <h4 class="text-lg font-semibold mb-3">Web Development</h4>
+        <p class="text-sm text-neutral-600">
+          Custom web applications using Laravel, Node.js, and modern frameworks.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow">
+        <h4 class="text-lg font-semibold mb-3">Cloud Solutions</h4>
+        <p class="text-sm text-neutral-600">
+          AWS, Azure, and scalable infrastructure design.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow">
+        <h4 class="text-lg font-semibold mb-3">Cybersecurity</h4>
+        <p class="text-sm text-neutral-600">
+          Secure authentication, token management, and compliance systems.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTIONS -->
+<section id="solutions" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <img 
+      src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=500&fit=crop"
+      class="rounded-2xl shadow-lg"
+    />
+
+    <div>
+      <h3 class="text-3xl font-semibold mb-6">Enterprise Solutions</h3>
+      <p class="text-neutral-600 leading-relaxed">
+        We build enterprise-grade software with secure architecture, real-time analytics,
+        automation, and high scalability for large organizations.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-20 bg-neutral-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-semibold text-center mb-12">Our Work</h3>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <img 
+          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"
+          class="rounded-lg mb-4"
+        />
+        <h4 class="font-semibold">Enterprise Platform</h4>
+        <p class="text-sm text-neutral-600">Laravel · MySQL · Redis</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <img 
+          src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
+          class="rounded-lg mb-4"
+        />
+        <h4 class="font-semibold">High-Traffic API</h4>
+        <p class="text-sm text-neutral-600">Node.js · Queues · Cache</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <img 
+          src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop"
+          class="rounded-lg mb-4"
+        />
+        <h4 class="font-semibold">Secure Auth System</h4>
+        <p class="text-sm text-neutral-600">SSO · Tokens · OAuth</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 bg-white text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    <h3 class="text-3xl font-semibold mb-6">Let’s Build Something Great</h3>
+    <p class="text-neutral-600 mb-6">
+      Contact us for software development, consulting, or enterprise solutions.
+    </p>
+
+    <p class="font-medium">📧 avyra.solutions@gmail.com</p>
+    <p class="font-medium">🌐 https://avyra-dev.github.io/avyra-website</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-10 text-center text-sm text-neutral-500 bg-neutral-100">
+  © 2026 Avyra — Smart IT Solutions.
+</footer>
+
+</body>
+</html>
