@@ -6,51 +6,53 @@
   <title>Avyra Mehendi Art | Exquisite Bridal Henna in India</title>
   <meta name="description" content="Professional Mehendi Artist in Delhi/Mumbai. Specializing in intricate Bridal, Arabic, and contemporary Henna designs with 100% organic cones.">
 
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./script.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Lato', 'sans-serif'],
-            serif: ['Playfair Display', 'serif'],
-            script: ['Great Vibes', 'cursive'],
-          },
-          colors: {
-            // Earthy/Henna Palette
-            henna: {
-              50: '#fdf2f2',
-              100: '#fde8e8',
-              500: '#f43f5e',
-              700: '#be123c', // Deep Rose
-              800: '#9f1239', // Maroon
-              900: '#881337', // Dark Mehendi Color
-            },
-            gold: {
-              400: '#fbbf24',
-              500: '#f59e0b',
-              600: '#d97706', // Antique Gold
-            },
-            cream: '#fffbf7', // Warm off-white
-          },
-          backgroundImage: {
-            'mandala-pattern': "url('https://www.transparenttextures.com/patterns/arabesque.png')",
-          }
-        }
-      }
+  <style type="text/tailwindcss">
+    @theme {
+      /* Fonts */
+      --font-sans: "Lato", sans-serif;
+      --font-serif: "Playfair Display", serif;
+      --font-script: "Great Vibes", cursive;
+
+      /* Color Palette: Cream */
+      --color-cream: #fffbf7;
+
+      /* Color Palette: Henna (Red/Maroon) */
+      --color-henna-50: #fdf2f2;
+      --color-henna-100: #fde8e8;
+      --color-henna-500: #f43f5e;
+      --color-henna-700: #be123c;
+      --color-henna-800: #9f1239;
+      --color-henna-900: #881337;
+
+      /* Color Palette: Gold */
+      --color-gold-400: #fbbf24;
+      --color-gold-500: #f59e0b;
+      --color-gold-600: #d97706;
+
+      /* Custom Shadows */
+      --shadow-soft: 0 10px 40px -10px rgba(0,0,0,0.08);
+
+      /* Animations */
+      --animate-fade-in-up: fadeInUp 1s ease-out forwards;
     }
-  </script>
-  
-  <style>
-    /* Custom Scrollbar */
+
+    /* Keyframes for custom animation */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Custom Scrollbar Styling (Standard CSS) */
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #fffbf7; }
-    ::-webkit-scrollbar-thumb { background: #9f1239; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb { background: #881337; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #be123c; }
   </style>
 </head>
 
@@ -67,12 +69,12 @@
         <a href="#about" class="hover:text-henna-800 transition-colors">Artist</a>
         <a href="#portfolio" class="hover:text-henna-800 transition-colors">Portfolio</a>
         <a href="#packages" class="hover:text-henna-800 transition-colors">Bridal Packages</a>
-        <a href="#contact" class="px-6 py-2.5 bg-henna-900 text-white rounded-sm hover:bg-henna-800 transition-all shadow-lg hover:shadow-henna-900/30">
+        <a href="#contact" class="px-6 py-2.5 bg-henna-900 text-white rounded-sm hover:bg-henna-800 transition-all shadow-lg hover:shadow-henna-900/30 cursor-pointer">
           Book Date
         </a>
       </nav>
 
-      <button onclick="toggleMenu()" class="md:hidden text-henna-900 focus:outline-none">
+      <button onclick="toggleMenu()" class="md:hidden text-henna-900 focus:outline-none cursor-pointer">
         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
       </button>
     </div>
@@ -84,18 +86,16 @@
     </div>
   </header>
 
-  <section class="relative h-[90vh] flex items-center justify-center overflow-hidden">
+  <section class="relative min-h-[50rem] lg:min-h-screen flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img src="https://images.unsplash.com/photo-1621801306967-a8449c2598c2?q=80&w=2070&auto=format&fit=crop" 
-           class="w-full h-full object-cover object-center" 
-           alt="Indian Bride Henna">
+      <img src="https://images.unsplash.com/photo-1621801306967-a8449c2598c2?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover object-center" alt="Indian Bride Henna">
       <div class="absolute inset-0 bg-gradient-to-t from-henna-900/90 via-henna-900/40 to-transparent"></div>
     </div>
 
-    <div class="relative z-10 text-center px-6 max-w-4xl mx-auto mt-16">
+    <div class="relative z-10 text-center px-10 max-w-4xl mx-auto mt-16">
       <p class="font-script text-4xl md:text-6xl text-gold-400 mb-4 animate-fade-in-up">Adorning your hands with</p>
       <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl text-white font-bold mb-6 leading-tight drop-shadow-lg">
-        Tradition & <span class="text-gold-400 italic">Elegance</span>
+        Tradition &amp; <span class="text-gold-400 italic">Elegance</span>
       </h1>
       <p class="text-stone-100 text-lg md:text-xl font-light mb-10 tracking-wide max-w-2xl mx-auto">
         Specializing in intricate Indian Bridal, Arabic, and Contemporary designs. 
@@ -121,7 +121,7 @@
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
       <div class="relative">
         <div class="absolute -top-4 -left-4 w-full h-full border-2 border-gold-600 rounded-tl-[3rem] rounded-br-[3rem]"></div>
-        <img src="https://images.unsplash.com/photo-1596238640361-9f9392e21303?w=800&h=1000&fit=crop" 
+        <img src="./henna/henna1.avif" 
              class="relative z-10 w-full rounded-tl-[3rem] rounded-br-[3rem] shadow-2xl" alt="Artist working">
       </div>
       
@@ -163,35 +163,35 @@
 
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div class="col-span-2 row-span-2 group relative overflow-hidden rounded-lg cursor-pointer">
-          <img src="https://images.unsplash.com/photo-1563462963364-1627c276532d?w=800&h=800&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          <img src="./henna/henna3.avif" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
           <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
             <span class="font-serif text-white text-2xl border-b border-white pb-1">Royal Bridal</span>
           </div>
         </div>
 
         <div class="group relative overflow-hidden rounded-lg cursor-pointer">
-          <img src="https://images.unsplash.com/photo-1550247657-3dc6177b94b0?w=400&h=400&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          <img src="./henna/henna2.avif" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
           <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
             <span class="font-serif text-white text-lg">Intricate Feet</span>
           </div>
         </div>
 
         <div class="group relative overflow-hidden rounded-lg cursor-pointer">
-          <img src="https://images.unsplash.com/photo-1595156681498-4c913508c909?w=400&h=400&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          <img src="./henna/henna4.avif" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
            <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
             <span class="font-serif text-white text-lg">Arabic Style</span>
           </div>
         </div>
 
         <div class="group relative overflow-hidden rounded-lg cursor-pointer">
-          <img src="https://images.unsplash.com/photo-1651811634568-d0554158674d?w=400&h=400&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          <img src="./henna/henna5.avif" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
            <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
             <span class="font-serif text-white text-lg">Contemporary</span>
           </div>
         </div>
 
         <div class="group relative overflow-hidden rounded-lg cursor-pointer">
-          <img src="https://images.unsplash.com/photo-1596796929949-573516541571?w=400&h=400&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          <img src="./henna/henna6.avif" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
            <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
             <span class="font-serif text-white text-lg">Figures & Portraits</span>
           </div>
@@ -199,7 +199,7 @@
       </div>
       
       <div class="text-center mt-12">
-        <button class="text-henna-900 border-b-2 border-henna-900 font-bold uppercase tracking-widest pb-1 hover:text-gold-600 hover:border-gold-600 transition-colors">
+        <button class="text-henna-900 border-b-2 border-henna-900 font-bold uppercase tracking-widest pb-1 hover:text-gold-600 hover:border-gold-600 transition-colors cursor-pointer">
           View Full Instagram Gallery
         </button>
       </div>
@@ -290,11 +290,11 @@
           <div class="grid md:grid-cols-2 gap-6">
             <div>
               <label class="block text-xs font-bold uppercase text-stone-500 mb-2">Name</label>
-              <input type="text" class="w-full border-b-2 border-stone-200 py-3 focus:outline-none focus:border-henna-900 bg-transparent transition-colors" placeholder="Your Name">
+              <input type="text" class="w-full border-b-2 border-stone-200 py-3 focus:outline-none focus:border-henna-900 bg-transparent transition-colors text-stone-800" placeholder="Your Name">
             </div>
             <div>
               <label class="block text-xs font-bold uppercase text-stone-500 mb-2">Phone</label>
-              <input type="tel" class="w-full border-b-2 border-stone-200 py-3 focus:outline-none focus:border-henna-900 bg-transparent transition-colors" placeholder="+91 98765 43210">
+              <input type="tel" class="w-full border-b-2 border-stone-200 py-3 focus:outline-none focus:border-henna-900 bg-transparent transition-colors text-stone-800" placeholder="+91 98765 43210">
             </div>
           </div>
 
@@ -316,10 +316,10 @@
 
           <div>
              <label class="block text-xs font-bold uppercase text-stone-500 mb-2">Message / Location</label>
-             <textarea rows="3" class="w-full border-b-2 border-stone-200 py-3 focus:outline-none focus:border-henna-900 bg-transparent transition-colors" placeholder="Venue details or specific design requests..."></textarea>
+             <textarea rows="3" class="w-full border-b-2 border-stone-200 py-3 focus:outline-none focus:border-henna-900 bg-transparent transition-colors text-stone-800" placeholder="Venue details or specific design requests..."></textarea>
           </div>
 
-          <button class="w-full bg-henna-900 text-white font-serif text-lg py-4 hover:bg-henna-800 transition-colors shadow-lg mt-4 flex items-center justify-center gap-2">
+          <button class="w-full bg-henna-900 text-white font-serif text-lg py-4 hover:bg-henna-800 transition-colors shadow-lg mt-4 flex items-center justify-center gap-2 cursor-pointer">
             <span>Send Enquiry</span>
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
           </button>
@@ -352,7 +352,7 @@
 
       <div>
         <h4 class="text-white font-serif mb-4">Contact</h4>
-        <p class="text-sm">Email: avyra.henna@gmail.com</p>
+        <p class="text-sm">Email: <a href="mailto:avyra.henna@gmail.com" class="hover:text-gold-500">avyra.henna@gmail.com</a></p>
         <p class="text-sm mt-2">Phone: +91 98765 43210</p>
         <div class="flex justify-center md:justify-start gap-4 mt-6">
           <a href="#" class="text-white hover:text-pink-500"><span class="sr-only">Instagram</span>📷</a>
