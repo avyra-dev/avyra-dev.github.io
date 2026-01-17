@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arunbalaji | Senior Software Developer</title>
+
+  <script src="./script.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0a84ff'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-neutral-50 text-neutral-900 antialiased">
+
+<!-- Header -->
+<header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-neutral-200">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-lg font-semibold tracking-tight">ARUNBALAJI</h1>
+
+    <nav class="hidden md:flex gap-8 text-sm font-medium text-neutral-600">
+      <a href="#about" class="hover:text-neutral-900">About</a>
+      <a href="#expertise" class="hover:text-neutral-900">Expertise</a>
+      <a href="#experience" class="hover:text-neutral-900">Experience</a>
+      <a href="#projects" class="hover:text-neutral-900">Projects</a>
+      <a href="#contact" class="hover:text-neutral-900">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-b from-white to-neutral-100"></div>
+
+  <div class="relative max-w-6xl mx-auto px-6 py-32 text-center">
+    <h2 class="text-4xl md:text-6xl font-semibold tracking-tight mb-6">
+      Designing & building
+      <br class="hidden md:block" />
+      reliable backend systems
+    </h2>
+
+    <p class="text-lg md:text-xl text-neutral-600 max-w-2xl mx-auto mb-10">
+      Senior Software Developer specializing in scalable backend architectures,
+      security-first design, and high-performance APIs using
+      <span class="font-medium text-neutral-900">Laravel</span> &
+      <span class="font-medium text-neutral-900">Node.js</span>.
+    </p>
+
+    <div class="flex justify-center gap-6">
+      <a href="#projects"
+         class="bg-indigo-400 text-white px-7 py-3 rounded-full text-sm font-medium shadow hover:shadow-lg transition">
+        View Projects
+      </a>
+      <a href="#contact"
+         class="px-7 py-3 rounded-full text-sm font-medium border border-neutral-300 hover:bg-neutral-100 transition">
+        Contact Me
+      </a>
+    </div>
+
+    <!-- Stats -->
+    <div class="mt-16 grid grid-cols-3 gap-8 max-w-xl mx-auto text-center">
+      <div>
+        <p class="text-3xl font-semibold">6+</p>
+        <p class="text-sm text-neutral-600">Years Experience</p>
+      </div>
+      <div>
+        <p class="text-3xl font-semibold">20+</p>
+        <p class="text-sm text-neutral-600">Projects Delivered</p>
+      </div>
+      <div>
+        <p class="text-3xl font-semibold">100k+</p>
+        <p class="text-sm text-neutral-600">Users Served</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-28">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-semibold mb-6">About Me</h3>
+    <p class="text-neutral-600 text-lg leading-relaxed">
+      I’m a backend-focused senior software developer who enjoys solving complex
+      business problems through clean architecture, secure design, and scalable systems.
+      I’ve worked on enterprise platforms, high-traffic APIs, and security-critical applications,
+      collaborating closely with product, frontend, and DevOps teams.
+    </p>
+  </div>
+</section>
+
+<!-- Expertise -->
+<section id="expertise" class="py-28 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-semibold text-center mb-16">What I Do</h3>
+
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="expertise-card">
+        <h4 class="text-lg font-semibold mb-3">Backend Architecture</h4>
+        <p class="text-sm text-neutral-600 leading-relaxed">
+          Designing scalable, maintainable backend systems using layered architecture,
+          SOLID principles, and clean code practices.
+        </p>
+      </div>
+
+      <div class="expertise-card">
+        <h4 class="text-lg font-semibold mb-3">API & Integrations</h4>
+        <p class="text-sm text-neutral-600 leading-relaxed">
+          Building secure REST APIs, integrating third-party services,
+          handling webhooks, and ensuring reliability at scale.
+        </p>
+      </div>
+
+      <div class="expertise-card">
+        <h4 class="text-lg font-semibold mb-3">Security & Performance</h4>
+        <p class="text-sm text-neutral-600 leading-relaxed">
+          Password-less onboarding, expiring tokens, RBAC,
+          SSO compatibility, and performance optimization.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="py-28">
+  <div class="max-w-5xl mx-auto px-6">
+    <h3 class="text-3xl font-semibold text-center mb-16">Experience</h3>
+
+    <div class="space-y-10">
+      <div class="experience-item">
+        <h4 class="font-semibold">Senior Software Developer</h4>
+        <p class="text-sm text-neutral-500 mb-2">2022 – Present</p>
+        <p class="text-neutral-600 text-sm leading-relaxed">
+          Leading backend development for enterprise applications,
+          designing APIs, improving system security, and mentoring junior developers.
+        </p>
+      </div>
+
+      <div class="experience-item">
+        <h4 class="font-semibold">Software Developer</h4>
+        <p class="text-sm text-neutral-500 mb-2">2019 – 2022</p>
+        <p class="text-neutral-600 text-sm leading-relaxed">
+          Built and maintained Laravel-based applications,
+          optimized database queries, and delivered features for production systems.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-semibold text-center mb-16">Selected Projects</h3>
+
+    <div class="grid gap-8 md:grid-cols-3">
+      <div class="project-card">
+        <h4 class="text-lg font-semibold mb-3">Enterprise Management Platform</h4>
+        <p class="text-sm text-neutral-600 mb-4">
+          Large-scale Laravel application with RBAC, audit logs, and secure authentication.
+        </p>
+        <p class="text-xs text-neutral-500">Laravel · MySQL · Redis</p>
+      </div>
+
+      <div class="project-card">
+        <h4 class="text-lg font-semibold mb-3">High-Traffic API System</h4>
+        <p class="text-sm text-neutral-600 mb-4">
+          Node.js REST APIs handling thousands of requests per minute with caching and queues.
+        </p>
+        <p class="text-xs text-neutral-500">Node.js · REST · Queues</p>
+      </div>
+
+      <div class="project-card">
+        <h4 class="text-lg font-semibold mb-3">Secure Onboarding Flow</h4>
+        <p class="text-sm text-neutral-600 mb-4">
+          Password-less onboarding with expiring links, SSO support, and compliance standards.
+        </p>
+        <p class="text-xs text-neutral-500">Security · Tokens · SSO</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-28">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-semibold mb-8">Let’s Work Together</h3>
+
+    <p class="text-neutral-600 text-lg mb-10">
+      Open to full-time roles, consulting, and challenging backend problems.
+    </p>
+
+    <div class="space-y-3 text-neutral-600 text-lg">
+      <p>📧 avyra.solutions@gmail.com</p>
+      <p>🐙 https://avyra-dev.github.io/</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-10 text-center text-sm text-neutral-500">
+  © 2026 Avyra Built with clarity & care.
+</footer>
+
+<style>
+  .expertise-card {
+    @apply bg-neutral-50 rounded-2xl p-8 shadow-sm hover:shadow-md transition;
+  }
+
+  .project-card {
+    @apply bg-neutral-50 rounded-2xl p-8 shadow-sm hover:shadow-lg transition transform hover:-translate-y-1;
+  }
+
+  .experience-item {
+    @apply border-l-2 border-neutral-200 pl-6;
+  }
+</style>
+
+</body>
+
+</html>
